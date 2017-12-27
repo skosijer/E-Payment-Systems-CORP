@@ -1,6 +1,8 @@
 package com.example.demo.controllers;
 
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,13 +11,16 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/corp-insurance-forms")
+@RequestMapping("/corpMain")
 public class MainController {
 
-    @RequestMapping(value = "/regions/getAll", method = RequestMethod.GET)
-    public String getAllRegions(){
-//        RestTemplate rt =  new RestTemplate();
-//        rt.getForEntity("http://localhost:8082/dc-insurance-forms/regions/getAll", String.class);
-        return "NRs";
+    @Value("${datacentar.url}")
+    private String datacentarUrl;
+
+    @RequestMapping(value = "/dobaviStarosneGrupe", method = RequestMethod.GET)
+    public ResponseEntity<?> getAllRegions(){
+        RestTemplate rt =  new RestTemplate();
+        ResponseEntity<String> ret = rt.getForEntity("http://" + this.datacentarUrl + "/dcRizici/dobaviStarosneGrupe", String.class);
+        return ret;
     }
 }
