@@ -17,10 +17,17 @@ public class MainController {
     @Value("${datacentar.url}")
     private String datacentarUrl;
 
+    private RestTemplate rt = new RestTemplate();
+
     @RequestMapping(value = "/dobaviStarosneGrupe", method = RequestMethod.GET)
-    public ResponseEntity<?> getAllRegions(){
-        RestTemplate rt =  new RestTemplate();
+    public ResponseEntity<?> dobaviStarosneGrupe(){
         ResponseEntity<String> ret = rt.getForEntity("http://" + this.datacentarUrl + "/dcRizici/dobaviStarosneGrupe", String.class);
+        return ret;
+    }
+
+    @RequestMapping(value = "/dobaviRegione", method = RequestMethod.GET)
+    public ResponseEntity<?> dobaviRegione(){
+        ResponseEntity<String> ret = rt.getForEntity("http://" + this.datacentarUrl + "/dcRizici/dobaviRegione", String.class);
         return ret;
     }
 }
