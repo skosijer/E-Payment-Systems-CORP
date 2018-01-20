@@ -1,0 +1,95 @@
+2018-01-18 21:49:34.773  INFO 13724 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on DESKTOP-BRJS8A6 with PID 13724 (started by User in C:\Users\User\Desktop\CORP Backend\12.01.2018\E-Payment-Systems-CORP)
+2018-01-18 21:49:34.784  INFO 13724 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-18 21:49:35.003  INFO 13724 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7f23d9: startup date [Thu Jan 18 21:49:34 CET 2018]; root of context hierarchy
+2018-01-18 21:49:38.803  INFO 13724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-01-18 21:49:38.826  INFO 13724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-18 21:49:38.828  INFO 13724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-18 21:49:39.013  INFO 13724 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-18 21:49:39.014  INFO 13724 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4021 ms
+2018-01-18 21:49:39.353  INFO 13724 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-18 21:49:39.370  INFO 13724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-18 21:49:39.372  INFO 13724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-18 21:49:39.373  INFO 13724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-18 21:49:39.374  INFO 13724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-18 21:49:41.082  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7f23d9: startup date [Thu Jan 18 21:49:34 CET 2018]; root of context hierarchy
+2018-01-18 21:49:41.605  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-18 21:49:41.614  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-18 21:49:41.618  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-18 21:49:41.619  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-18 21:49:41.621  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-18 21:49:41.624  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-18 21:49:41.627  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-18 21:49:41.640  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-18 21:49:41.642  INFO 13724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-18 21:49:42.006  INFO 13724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-18 21:49:42.007  INFO 13724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-18 21:49:42.185  INFO 13724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-18 21:49:42.833  INFO 13724 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-18 21:49:43.088  INFO 13724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-01-18 21:49:43.141  INFO 13724 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 9.514 seconds (JVM running for 12.191)
+2018-01-18 21:53:46.848  INFO 13724 --- [http-nio-8081-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-18 21:53:46.849  INFO 13724 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-18 21:53:46.919  INFO 13724 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 70 ms
+2018-01-20 15:51:00.085 ERROR 13724 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 null] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:319) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana(MainController.java:68) ~[classes/:na]
+	at sun.reflect.GeneratedMethodAccessor27.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_144]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_144]
+
