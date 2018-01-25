@@ -1,16 +1,13 @@
 package com.example.demo.controllers;
 
 
+import com.example.demo.DTO.PolisaDTO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
@@ -29,10 +26,22 @@ public class MainController {
     private RestTemplate rt;
 
     private final Log logger = LogFactory.getLog(this.getClass());
+
+    @PostMapping(value = "/polisa")
+    public ResponseEntity<?> postPolisa(@RequestBody PolisaDTO polisa) {
+        ResponseEntity<?> response = rt.postForEntity("https://" + this.datacentarUrl + "/dcRizici/polisa", polisa, String.class);
+        return response;
+    }
     
     @RequestMapping(value = "/dobaviStarosneGrupe", method = RequestMethod.GET)
     public ResponseEntity<?> dobaviStarosneGrupe(){
         ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/dobaviStarosneGrupe", String.class);
+        return ret;
+    }
+
+    @RequestMapping(value = "/getOsiguranjaDoIznosa", method = RequestMethod.GET)
+    public ResponseEntity<?> dobaviOsiguranjaDoIznosa(){
+        ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/getOsiguranjaDoIznosa", String.class);
         return ret;
     }
 
@@ -69,6 +78,36 @@ public class MainController {
     @RequestMapping(value = "/dobaviOsiguranjaStana", method = RequestMethod.GET)
     public ResponseEntity<?> dobaviOsiguranjaStana(){
         ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/dobaviOsiguranjaStana", String.class);
+        return ret;
+    }
+
+    @RequestMapping(value = "/getSlepovanje", method = RequestMethod.GET)
+    public ResponseEntity<?> dobaviSlepovanje(){
+        ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/getSlepovanje", String.class);
+        return ret;
+    }
+
+    @RequestMapping(value = "/getPopravka", method = RequestMethod.GET)
+    public ResponseEntity<?> dobaviPopravka(){
+        ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/getPopravka", String.class);
+        return ret;
+    }
+
+    @RequestMapping(value = "/getSmestaj", method = RequestMethod.GET)
+    public ResponseEntity<?> dobaviSmestaj(){
+        ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/getSmestaj", String.class);
+        return ret;
+    }
+
+    @RequestMapping(value = "/getPrevoz", method = RequestMethod.GET)
+    public ResponseEntity<?> dobaviPrevoz(){
+        ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/getPrevoz", String.class);
+        return ret;
+    }
+
+    @RequestMapping(value = "/getPovrsina", method = RequestMethod.GET)
+    public ResponseEntity<?> dobaviPovrsinu(){
+        ResponseEntity<String> ret = rt.getForEntity("https://" + this.datacentarUrl + "/dcRizici/getPovrsina", String.class);
         return ret;
     }
     
