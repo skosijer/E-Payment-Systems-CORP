@@ -1160,3 +1160,652 @@ org.apache.http.ProtocolException: The server failed to respond with a valid HTT
 2018-01-25 21:20:42.922  INFO 67870 --- [https-jsse-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
 2018-01-25 22:21:43.562  INFO 67870 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54571bde: startup date [Thu Jan 25 21:20:00 CET 2018]; root of context hierarchy
 2018-01-25 22:21:43.618  INFO 67870 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 22:50:49.133  INFO 70582 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 70582 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-25 22:50:49.136  INFO 70582 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-25 22:50:49.182  INFO 70582 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@773e8081: startup date [Thu Jan 25 22:50:49 CET 2018]; root of context hierarchy
+2018-01-25 22:50:50.549  INFO 70582 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-25 22:50:50.568  INFO 70582 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 22:50:50.570  INFO 70582 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 22:50:50.676  INFO 70582 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 22:50:50.677  INFO 70582 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1496 ms
+2018-01-25 22:50:50.891  INFO 70582 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 22:50:50.896  INFO 70582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 22:50:50.897  INFO 70582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 22:50:50.897  INFO 70582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 22:50:50.898  INFO 70582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 22:50:51.666  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@773e8081: startup date [Thu Jan 25 22:50:49 CET 2018]; root of context hierarchy
+2018-01-25 22:50:51.895  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-25 22:50:51.898  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-25 22:50:51.899  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-25 22:50:51.899  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-25 22:50:51.900  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-25 22:50:51.900  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-25 22:50:51.901  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-25 22:50:51.902  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-25 22:50:51.902  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-25 22:50:51.903  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-25 22:50:51.903  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-25 22:50:51.904  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-25 22:50:51.904  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-25 22:50:51.904  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-25 22:50:51.907  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 22:50:51.908  INFO 70582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 22:50:51.962  INFO 70582 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 22:50:51.962  INFO 70582 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 22:50:52.024  INFO 70582 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 22:50:52.258  INFO 70582 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 22:50:57.518  INFO 70582 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-25 22:50:57.522  INFO 70582 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 18.714 seconds (JVM running for 25.211)
+2018-01-25 22:51:14.393  INFO 70582 --- [https-jsse-nio-8081-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 22:51:14.394  INFO 70582 --- [https-jsse-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 22:51:14.415  INFO 70582 --- [https-jsse-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-01-25 23:28:31.480 ERROR 70582 --- [https-jsse-nio-8081-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 ] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:414) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.example.demo.controllers.MainController.postPolisa(MainController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+
+2018-01-25 23:38:33.763  INFO 70582 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@773e8081: startup date [Thu Jan 25 22:50:49 CET 2018]; root of context hierarchy
+2018-01-25 23:38:33.840  INFO 70582 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 23:38:50.676  INFO 71962 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 71962 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-25 23:38:50.680  INFO 71962 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-25 23:38:50.717  INFO 71962 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46eb00b8: startup date [Thu Jan 25 23:38:50 CET 2018]; root of context hierarchy
+2018-01-25 23:38:51.554  INFO 71962 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-25 23:38:51.565  INFO 71962 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 23:38:51.565  INFO 71962 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 23:38:51.642  INFO 71962 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 23:38:51.643  INFO 71962 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 926 ms
+2018-01-25 23:38:51.771  INFO 71962 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 23:38:51.774  INFO 71962 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 23:38:51.774  INFO 71962 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 23:38:51.774  INFO 71962 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 23:38:51.774  INFO 71962 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 23:38:52.215  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46eb00b8: startup date [Thu Jan 25 23:38:50 CET 2018]; root of context hierarchy
+2018-01-25 23:38:52.293  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-25 23:38:52.296  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-25 23:38:52.296  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-25 23:38:52.297  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-25 23:38:52.298  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-25 23:38:52.298  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-25 23:38:52.299  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-25 23:38:52.299  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-25 23:38:52.300  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-25 23:38:52.300  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-25 23:38:52.300  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-25 23:38:52.301  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-25 23:38:52.302  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-25 23:38:52.302  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-25 23:38:52.305  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 23:38:52.305  INFO 71962 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 23:38:52.335  INFO 71962 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:38:52.335  INFO 71962 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:38:52.375  INFO 71962 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:38:52.508  INFO 71962 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 23:38:57.723  INFO 71962 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-25 23:38:57.727  INFO 71962 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 17.349 seconds (JVM running for 22.463)
+2018-01-25 23:39:21.790  INFO 71962 --- [https-jsse-nio-8081-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 23:39:21.791  INFO 71962 --- [https-jsse-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 23:39:21.812  INFO 71962 --- [https-jsse-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-01-25 23:40:32.829 ERROR 71962 --- [https-jsse-nio-8081-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 ] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:414) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.example.demo.controllers.MainController.postPolisa(MainController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+
+2018-01-25 23:42:26.903  INFO 71962 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46eb00b8: startup date [Thu Jan 25 23:38:50 CET 2018]; root of context hierarchy
+2018-01-25 23:42:26.910  INFO 71962 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 23:42:44.086  INFO 72138 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 72138 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-25 23:42:44.089  INFO 72138 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-25 23:42:44.125  INFO 72138 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16c0dad1: startup date [Thu Jan 25 23:42:44 CET 2018]; root of context hierarchy
+2018-01-25 23:42:45.089  INFO 72138 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-25 23:42:45.099  INFO 72138 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 23:42:45.102  INFO 72138 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 23:42:45.173  INFO 72138 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 23:42:45.174  INFO 72138 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1049 ms
+2018-01-25 23:42:45.311  INFO 72138 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 23:42:45.316  INFO 72138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 23:42:45.317  INFO 72138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 23:42:45.317  INFO 72138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 23:42:45.317  INFO 72138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 23:42:45.948  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16c0dad1: startup date [Thu Jan 25 23:42:44 CET 2018]; root of context hierarchy
+2018-01-25 23:42:46.031  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-25 23:42:46.033  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-25 23:42:46.034  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-25 23:42:46.034  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-25 23:42:46.035  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-25 23:42:46.035  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-25 23:42:46.036  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-25 23:42:46.036  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-25 23:42:46.037  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-25 23:42:46.037  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-25 23:42:46.038  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-25 23:42:46.039  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-25 23:42:46.040  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-25 23:42:46.042  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-25 23:42:46.047  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 23:42:46.048  INFO 72138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 23:42:46.092  INFO 72138 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:42:46.092  INFO 72138 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:42:46.119  INFO 72138 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:42:46.259  INFO 72138 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 23:42:51.519  INFO 72138 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-25 23:42:51.525  INFO 72138 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 17.799 seconds (JVM running for 22.891)
+2018-01-25 23:43:10.827  INFO 72138 --- [https-jsse-nio-8081-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 23:43:10.827  INFO 72138 --- [https-jsse-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 23:43:10.844  INFO 72138 --- [https-jsse-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-25 23:44:13.736 ERROR 72138 --- [https-jsse-nio-8081-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 ] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:414) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.example.demo.controllers.MainController.postPolisa(MainController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+
+2018-01-25 23:46:01.823  INFO 72138 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16c0dad1: startup date [Thu Jan 25 23:42:44 CET 2018]; root of context hierarchy
+2018-01-25 23:46:01.837  INFO 72138 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 23:46:27.299  INFO 72321 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 72321 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-25 23:46:27.303  INFO 72321 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-25 23:46:27.351  INFO 72321 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b3c46b7: startup date [Thu Jan 25 23:46:27 CET 2018]; root of context hierarchy
+2018-01-25 23:46:29.351  INFO 72321 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-25 23:46:29.369  INFO 72321 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 23:46:29.370  INFO 72321 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 23:46:29.482  INFO 72321 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 23:46:29.484  INFO 72321 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2134 ms
+2018-01-25 23:46:29.680  INFO 72321 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 23:46:29.684  INFO 72321 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 23:46:29.685  INFO 72321 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 23:46:29.685  INFO 72321 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 23:46:29.686  INFO 72321 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 23:46:30.734  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b3c46b7: startup date [Thu Jan 25 23:46:27 CET 2018]; root of context hierarchy
+2018-01-25 23:46:30.907  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-25 23:46:30.909  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-25 23:46:30.910  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-25 23:46:30.911  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-25 23:46:30.940  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-25 23:46:30.941  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-25 23:46:30.944  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-25 23:46:30.945  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-25 23:46:30.946  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-25 23:46:30.956  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-25 23:46:30.957  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-25 23:46:30.958  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-25 23:46:30.958  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-25 23:46:30.959  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-25 23:46:30.962  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 23:46:30.963  INFO 72321 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 23:46:31.011  INFO 72321 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:46:31.011  INFO 72321 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:46:31.128  INFO 72321 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:46:31.475  INFO 72321 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 23:46:36.809  INFO 72321 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-25 23:46:36.815  INFO 72321 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 19.872 seconds (JVM running for 26.466)
+2018-01-25 23:47:01.517  INFO 72321 --- [https-jsse-nio-8081-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 23:47:01.518  INFO 72321 --- [https-jsse-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 23:47:01.532  INFO 72321 --- [https-jsse-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-01-25 23:47:47.115 ERROR 72321 --- [https-jsse-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 ] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:414) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.example.demo.controllers.MainController.postPolisa(MainController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+
+2018-01-25 23:49:44.069  INFO 72321 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b3c46b7: startup date [Thu Jan 25 23:46:27 CET 2018]; root of context hierarchy
+2018-01-25 23:49:44.076  INFO 72321 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 23:50:05.165  INFO 72471 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 72471 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-25 23:50:05.169  INFO 72471 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-25 23:50:05.221  INFO 72471 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58592b2: startup date [Thu Jan 25 23:50:05 CET 2018]; root of context hierarchy
+2018-01-25 23:50:06.310  INFO 72471 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-25 23:50:06.322  INFO 72471 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 23:50:06.323  INFO 72471 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 23:50:06.397  INFO 72471 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 23:50:06.398  INFO 72471 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1177 ms
+2018-01-25 23:50:06.519  INFO 72471 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 23:50:06.522  INFO 72471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 23:50:06.523  INFO 72471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 23:50:06.523  INFO 72471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 23:50:06.523  INFO 72471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 23:50:06.968  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58592b2: startup date [Thu Jan 25 23:50:05 CET 2018]; root of context hierarchy
+2018-01-25 23:50:07.039  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-25 23:50:07.042  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-25 23:50:07.042  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-25 23:50:07.043  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-25 23:50:07.044  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-25 23:50:07.044  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-25 23:50:07.045  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-25 23:50:07.045  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-25 23:50:07.046  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-25 23:50:07.046  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-25 23:50:07.047  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-25 23:50:07.047  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-25 23:50:07.048  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-25 23:50:07.049  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-25 23:50:07.052  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 23:50:07.052  INFO 72471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 23:50:07.085  INFO 72471 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:50:07.085  INFO 72471 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:50:07.115  INFO 72471 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:50:07.241  INFO 72471 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 23:50:12.566  INFO 72471 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-25 23:50:12.582  INFO 72471 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 17.72 seconds (JVM running for 24.338)
+2018-01-25 23:50:29.433  INFO 72471 --- [https-jsse-nio-8081-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 23:50:29.434  INFO 72471 --- [https-jsse-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 23:50:29.454  INFO 72471 --- [https-jsse-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-01-25 23:51:29.779 ERROR 72471 --- [https-jsse-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 ] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:414) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.example.demo.controllers.MainController.postPolisa(MainController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+
+2018-01-25 23:53:01.388  INFO 72471 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58592b2: startup date [Thu Jan 25 23:50:05 CET 2018]; root of context hierarchy
+2018-01-25 23:53:01.391  INFO 72471 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 23:53:23.604  INFO 72620 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 72620 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-25 23:53:23.608  INFO 72620 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-25 23:53:23.656  INFO 72620 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71feba8c: startup date [Thu Jan 25 23:53:23 CET 2018]; root of context hierarchy
+2018-01-25 23:53:25.409  INFO 72620 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-25 23:53:25.427  INFO 72620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 23:53:25.429  INFO 72620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 23:53:25.534  INFO 72620 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 23:53:25.536  INFO 72620 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1880 ms
+2018-01-25 23:53:25.782  INFO 72620 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 23:53:25.787  INFO 72620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 23:53:25.788  INFO 72620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 23:53:25.788  INFO 72620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 23:53:25.788  INFO 72620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 23:53:27.017  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71feba8c: startup date [Thu Jan 25 23:53:23 CET 2018]; root of context hierarchy
+2018-01-25 23:53:27.211  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-25 23:53:27.221  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-25 23:53:27.223  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-25 23:53:27.224  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-25 23:53:27.224  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-25 23:53:27.233  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-25 23:53:27.234  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-25 23:53:27.235  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-25 23:53:27.235  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-25 23:53:27.236  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-25 23:53:27.237  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-25 23:53:27.237  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-25 23:53:27.238  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-25 23:53:27.248  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-25 23:53:27.251  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 23:53:27.252  INFO 72620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 23:53:27.327  INFO 72620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:53:27.328  INFO 72620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:53:27.407  INFO 72620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 23:53:27.754  INFO 72620 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 23:53:33.051  INFO 72620 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-25 23:53:33.056  INFO 72620 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 19.696 seconds (JVM running for 26.463)
+2018-01-25 23:53:37.593  INFO 72620 --- [https-jsse-nio-8081-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 23:53:37.593  INFO 72620 --- [https-jsse-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 23:53:37.610  INFO 72620 --- [https-jsse-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-01-25 23:56:54.306  INFO 72620 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71feba8c: startup date [Thu Jan 25 23:53:23 CET 2018]; root of context hierarchy
+2018-01-25 23:56:54.315  INFO 72620 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-28 15:13:35.354  INFO 61372 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 61372 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-28 15:13:35.358  INFO 61372 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-28 15:13:35.392  INFO 61372 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27765285: startup date [Sun Jan 28 15:13:35 CET 2018]; root of context hierarchy
+2018-01-28 15:13:36.254  INFO 61372 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-28 15:13:36.265  INFO 61372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-28 15:13:36.266  INFO 61372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-28 15:13:36.339  INFO 61372 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-28 15:13:36.340  INFO 61372 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 948 ms
+2018-01-28 15:13:36.462  INFO 61372 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-28 15:13:36.465  INFO 61372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-28 15:13:36.466  INFO 61372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-28 15:13:36.466  INFO 61372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-28 15:13:36.466  INFO 61372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-28 15:13:36.951  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27765285: startup date [Sun Jan 28 15:13:35 CET 2018]; root of context hierarchy
+2018-01-28 15:13:37.029  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-28 15:13:37.032  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-28 15:13:37.033  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-28 15:13:37.034  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-28 15:13:37.035  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-28 15:13:37.035  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-28 15:13:37.036  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-28 15:13:37.038  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-28 15:13:37.038  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-28 15:13:37.039  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-28 15:13:37.040  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-28 15:13:37.041  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-28 15:13:37.041  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-28 15:13:37.043  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-28 15:13:37.046  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-28 15:13:37.047  INFO 61372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-28 15:13:37.081  INFO 61372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-28 15:13:37.081  INFO 61372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-28 15:13:37.118  INFO 61372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-28 15:13:37.270  INFO 61372 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-28 15:13:42.483  INFO 61372 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-28 15:13:42.488  INFO 61372 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 17.386 seconds (JVM running for 22.824)
+2018-01-28 15:28:01.577  INFO 61372 --- [https-jsse-nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-28 15:28:01.578  INFO 61372 --- [https-jsse-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-28 15:28:01.612  INFO 61372 --- [https-jsse-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-01-28 16:44:11.375  INFO 61372 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27765285: startup date [Sun Jan 28 15:13:35 CET 2018]; root of context hierarchy
+2018-01-28 16:44:11.509  INFO 61372 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-28 16:44:33.882  INFO 64449 --- [main] com.example.demo.CorpApplication         : Starting CorpApplication on Filips-MacBook-Pro.local with PID 64449 (/Users/filipdusic/Desktop/E-Payment-Systems-CORP/target/classes started by filipdusic in /Users/filipdusic/Desktop/E-Payment-Systems-CORP)
+2018-01-28 16:44:33.885  INFO 64449 --- [main] com.example.demo.CorpApplication         : No active profile set, falling back to default profiles: default
+2018-01-28 16:44:33.927  INFO 64449 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6aaccc65: startup date [Sun Jan 28 16:44:33 CET 2018]; root of context hierarchy
+2018-01-28 16:44:35.897  INFO 64449 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (https)
+2018-01-28 16:44:35.915  INFO 64449 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-28 16:44:35.916  INFO 64449 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-28 16:44:36.017  INFO 64449 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-28 16:44:36.018  INFO 64449 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2092 ms
+2018-01-28 16:44:36.224  INFO 64449 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-28 16:44:36.228  INFO 64449 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-28 16:44:36.229  INFO 64449 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-28 16:44:36.230  INFO 64449 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-28 16:44:36.230  INFO 64449 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-28 16:44:37.005  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6aaccc65: startup date [Sun Jan 28 16:44:33 CET 2018]; root of context hierarchy
+2018-01-28 16:44:37.159  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/cena],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postCena(com.example.demo.DTO.CenaRequestDTO)
+2018-01-28 16:44:37.166  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/polisa],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.postPolisa(com.example.demo.DTO.PolisaDTO)
+2018-01-28 16:44:37.167  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarosneGrupe],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarosneGrupe()
+2018-01-28 16:44:37.168  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getOsiguranjaDoIznosa],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaDoIznosa()
+2018-01-28 16:44:37.169  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviRegione],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviDestinacije()
+2018-01-28 16:44:37.169  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviSvrheOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSvrheOsiguranja()
+2018-01-28 16:44:37.170  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviPaketeOsiguranja],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPaketeOsiguranja()
+2018-01-28 16:44:37.171  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviStarostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviStarostiStana()
+2018-01-28 16:44:37.171  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviProcenjeneVrednostiStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviProcenjeneVrednostiStana()
+2018-01-28 16:44:37.172  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/dobaviOsiguranjaStana],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviOsiguranjaStana()
+2018-01-28 16:44:37.173  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSlepovanje],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSlepovanje()
+2018-01-28 16:44:37.174  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPopravka],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPopravka()
+2018-01-28 16:44:37.175  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getSmestaj],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviSmestaj()
+2018-01-28 16:44:37.176  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPrevoz],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPrevoz()
+2018-01-28 16:44:37.177  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/corpMain/getPovrsina],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controllers.MainController.dobaviPovrsinu()
+2018-01-28 16:44:37.180  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-28 16:44:37.181  INFO 64449 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-28 16:44:37.233  INFO 64449 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-28 16:44:37.233  INFO 64449 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-28 16:44:37.280  INFO 64449 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-28 16:44:37.482  INFO 64449 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-28 16:44:42.924  INFO 64449 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (https)
+2018-01-28 16:44:42.939  INFO 64449 --- [main] com.example.demo.CorpApplication         : Started CorpApplication in 19.94 seconds (JVM running for 27.829)
+2018-01-28 16:45:01.235  INFO 64449 --- [https-jsse-nio-8081-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-28 16:45:01.237  INFO 64449 --- [https-jsse-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-28 16:45:01.252  INFO 64449 --- [https-jsse-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-01-28 17:22:13.470  INFO 64449 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6aaccc65: startup date [Sun Jan 28 16:44:33 CET 2018]; root of context hierarchy
+2018-01-28 17:22:13.590  INFO 64449 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

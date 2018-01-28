@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 
+import com.example.demo.DTO.CenaRequestDTO;
 import com.example.demo.DTO.PolisaDTO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -26,6 +27,12 @@ public class MainController {
     private RestTemplate rt;
 
     private final Log logger = LogFactory.getLog(this.getClass());
+
+    @PostMapping(value = "/cena")
+    public ResponseEntity<?> postCena(@RequestBody CenaRequestDTO cenaReq){
+        ResponseEntity<?> response = rt.postForEntity("https://" + this.datacentarUrl + "/dcRizici/cena", cenaReq, String.class);
+        return response;
+    }
 
     @PostMapping(value = "/polisa")
     public ResponseEntity<?> postPolisa(@RequestBody PolisaDTO polisa) {
